@@ -37,6 +37,11 @@ production: CFLAGS += -O2
 production: CXXFLAGS += -O2
 production: $(EXECUTABLE)
 
+# Debug Target (GDB)
+debug: CFLAGS += -g 
+debug: CXX += -g 
+debug: $(EXECUTABLE)
+
 $(EXECUTABLE): $(OBJECTS)
 	@mkdir -p $(BIN_DIR)
 	$(CXX) -o $@ $^ $(LDFLAGS)
@@ -57,5 +62,8 @@ install: $(EXECUTABLE)
 
 clean:
 	rm -rf $(BUILD_DIR) $(BIN_DIR)
+
+gdb:
+	gdb -tui $(EXECUTABLE)
 
 .PHONY: all clean install production

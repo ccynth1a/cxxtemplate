@@ -12,6 +12,10 @@ Commands can be found in the Makefile of course, but to briefly summarise:
 ```
 make: Produce a quick, unoptimised executable in the bin/ directory of your project.
 
+make production: Produce an optimised executable
+
+make debug: Produce an executable with the -g flag for GDB
+
 make clean: Clean the build and bin directories for a production build.
 
 make run: Run the executable found in the bin/ directory. 
