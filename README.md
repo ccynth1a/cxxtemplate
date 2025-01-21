@@ -19,9 +19,7 @@
 ```
 
 ## Introduction 
-This is a templated project structure for low/mid size C/C++ projects. The commands do assume you're running a 64 bit version of Linux, I do not intend to make a Windows version. The set of utilities are very focused around my development stack, but this structure is generic enough to be reformatted for most projects. Bear (a tool for generating compilation databases) my tool of choice to make clangd LSP recognise include paths. My debugger of choice is GDB, so theres also a handful of make commands focused around that
-
----
+This is a templated project structure for low/mid size C/C++ projects. The commands do assume you're running a 64 bit version of Linux, I do not intend to make a Windows version. The set of utilities are very focused around my development stack, but this structure is generic enough to be reformatted for most projects.
 
 ## Setup (Dependencies)
 ### Script
@@ -39,8 +37,6 @@ For everyone else, the dependencies are as follows:
 - C Build Essential 
 - GNU Make
 - [bear](https://github.com/rizsotto/Bear)
-
----
 
 ## Setup (Project)
 
