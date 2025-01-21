@@ -66,4 +66,7 @@ clean:
 gdb:
 	gdb -tui $(EXECUTABLE)
 
+bear:
+	rm -rf $(BUILD_DIR) $(BIN_DIR) && bear -- make
+
 .PHONY: all clean install production
