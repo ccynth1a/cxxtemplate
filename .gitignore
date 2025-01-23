@@ -28,5 +28,3 @@ build/
 *.out
 your-project-name
 
-# template files 
-# install_build_dependencies.sh
