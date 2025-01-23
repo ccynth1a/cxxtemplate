@@ -23,21 +23,29 @@ This is a templated project structure for low/mid size C/C++ projects. The comma
 
 ## Setup (Dependencies)
 ### Script
-Included in the repository is a dependency installation script that works for the following Linux distributions:
+Included in the repository is a setup script that works for the following Linux distributions:
 - Debian/Ubuntu
 - Fedora
 - Arch Linux
 
-```
-chmod + x install_build_dependencies.sh 
-./install_build_dependencies.sh
+```bash
+chmod + x setup.sh 
+./setup.sh
 ```
 ### Manual
 For everyone else, the dependencies are as follows:
 - C Build Essential 
 - GNU Make
 - [bear](https://github.com/rizsotto/Bear)
+- git 
 
+The git upstream will still be set as this repository, so simply run
+```bash
+rm -rf .git/
+git init 
+git add * .gitignore 
+git commit -a -m "First Commit"
+```
 ## Setup (Project)
 
 There is only a handful of things that need to change before proceeding:
