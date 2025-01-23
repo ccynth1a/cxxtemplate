@@ -40,3 +40,4 @@ rm -rf .git/
 git init 
 git add * .gitignore 
 git commit -a -m "First Commit"
+echo_log "Setup Completed. Have Fun (Template Provided by CCynth1a)"
