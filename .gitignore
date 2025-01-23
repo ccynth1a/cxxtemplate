@@ -1,0 +1,32 @@
+# System Files
+.cache/
+.DS_Store/
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+
+# build artifacts
+*.o 
+*.a 
+*.so 
+*.lo 
+*.lai
+
+# log files 
+*.log 
+
+# vim swap 
+*.swp 
+
+# build directories
+bin/
+build/
+
+# binary files (redundancy)
+*.out
+your-project-name
+
+# template files 
+# install_build_dependencies.sh
